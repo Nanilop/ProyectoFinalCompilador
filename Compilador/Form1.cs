@@ -55,10 +55,10 @@ namespace Compilador
             this.lenguajeTableAdapter.Fill(this.compiladoresDataSet1.Lenguaje);
             OpenFileDialog1 = new OpenFileDialog();
             //LeeMatrizEstados("C:\\Users\\LOPEZ\\Desktop\\López Rodríguez Daniela\\8vo semestre\\BlocMatrizCobolt.csv");
-            btnExportar.Image = Image.FromFile("file_export_icon_138621.png");
-            VerContraseña.Image = Image.FromFile("eye_show_regular_icon_203603.png");
-            btnVerContraNueva.Image = Image.FromFile("eye_show_regular_icon_203603.png");
-            btnVerConfirmar.Image = Image.FromFile("eye_show_regular_icon_203603.png");
+            btnExportar.Image = Image.FromFile("..\\..\\Recursos\\file_export_icon_138621.png");
+            VerContraseña.Image = Image.FromFile("..\\..\\Recursos\\eye_show_regular_icon_203603.png");
+            btnVerContraNueva.Image = Image.FromFile("..\\..\\Recursos\\eye_show_regular_icon_203603.png");
+            btnVerConfirmar.Image = Image.FromFile("..\\..\\Recursos\\eye_show_regular_icon_203603.png");
             DGVSalida.Columns.Add("Token", "Token");
             DGVSalida.Columns.Add("Tipo", "Tipo");
             DGVSalida.Columns.Add("Directorio", "Directorio");
@@ -491,7 +491,7 @@ namespace Compilador
             }
             if (exporta == 0) {
                 DateTime f = DateTime.Now;
-                String archivo = Path.GetFullPath("ArchivosDeSalida\\") + "Output" + cbLenguaje.Text + txtUsuario.Text + f.Day.ToString()
+                String archivo = Path.GetFullPath("..\\..\\Recursos\\ArchivosDeSalida\\") + "Output" + cbLenguaje.Text + txtUsuario.Text + f.Day.ToString()
                     + f.Month.ToString() + f.Year.ToString() + "_" + f.Hour.ToString() + "-" +
                     f.Minute.ToString() + ".txt";
 
@@ -625,12 +625,12 @@ namespace Compilador
             if (verContr)
             {
                 verContr = false;
-                VerContraseña.Image = Image.FromFile("eye_show_regular_icon_203603.png");
+                VerContraseña.Image = Image.FromFile("..\\..\\Recursos\\eye_show_regular_icon_203603.png");
                 txtContraseña.PasswordChar = '*';
             }
             else {
                 verContr = true;
-                VerContraseña.Image = Image.FromFile("eye_hide_regular_icon_203604.png");
+                VerContraseña.Image = Image.FromFile("..\\..\\Recursos\\eye_hide_regular_icon_203604.png");
                 txtContraseña.PasswordChar = (char)0;
             }
         }
@@ -650,11 +650,11 @@ namespace Compilador
             EleccionLenguaje.Visible=false;
             CompiladorBoton.Visible = true;
             CompiladorBoton.Enabled = true;
-            LeeMatrizEstados(matz);
+            LeeMatrizEstados("..\\..\\Recursos\\"+matz);
             ListBox3.Items.Clear();
             //LeePalabrasReservadas("C:\\Users\\LOPEZ\\Desktop\\López Rodríguez Daniela\\7MO SEMESTRE\\PR.txt");
 
-            LeePalabrasReservadas(preser);
+            LeePalabrasReservadas("..\\..\\Recursos\\"+preser);
             for (var i = 0; i <= VectorPalabrasReservadas.Length - 1; i++)
                 ListBox3.Items.Add(VectorPalabrasReservadas[i] + "");
 
@@ -677,13 +677,13 @@ namespace Compilador
             if (verContrCon)
             {
                 verContrCon = false;
-                btnVerConfirmar.Image = Image.FromFile("eye_show_regular_icon_203603.png");
+                btnVerConfirmar.Image = Image.FromFile("..\\..\\Recursos\\eye_show_regular_icon_203603.png");
                 txtConfirContra.PasswordChar = '*';
             }
             else
             {
                 verContrCon = true;
-                btnVerConfirmar.Image = Image.FromFile("eye_hide_regular_icon_203604.png");
+                btnVerConfirmar.Image = Image.FromFile("..\\..\\Recursos\\eye_hide_regular_icon_203604.png");
                 txtConfirContra.PasswordChar = (char)0;
             }
         }
@@ -692,13 +692,13 @@ namespace Compilador
             if (verContrN)
             {
                 verContrN = false;
-                btnVerContraNueva.Image = Image.FromFile("eye_show_regular_icon_203603.png");
+                btnVerContraNueva.Image = Image.FromFile("..\\..\\Recursos\\eye_show_regular_icon_203603.png");
                 txtNuevoContraseña.PasswordChar = '*';
             }
             else
             {
                 verContrN = true;
-                btnVerContraNueva.Image = Image.FromFile("eye_hide_regular_icon_203604.png");
+                btnVerContraNueva.Image = Image.FromFile("..\\..\\Recursos\\eye_hide_regular_icon_203604.png");
                 txtNuevoContraseña.PasswordChar = (char)0;
             }
         }
