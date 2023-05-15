@@ -260,9 +260,73 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Recursos\Compiladores.bak" />
+    <None Include="Recursos\MatrizBasic.csv" />
+    <None Include="Recursos\MatrizC.csv" />
+    <None Include="Recursos\MatrizClipper.csv" />
+    <None Include="Recursos\MatrizCobolt.csv" />
+    <None Include="Recursos\MatrizDBase.csv" />
+    <None Include="Recursos\MatrizFortran.csv" />
+    <None Include="Recursos\MatrizJava.csv" />
+    <None Include="Recursos\MatrizPascal.csv" />
+    <None Include="Recursos\MatrizPhyton.csv" />
+    <None Include="Recursos\MatrizVisualFoxpro.csv" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBase1252023_18-22.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1252023_18-26.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1252023_18-52.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1252023_18-55.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1252023_19-0.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1252023_19-28.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1252023_19-30.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1252023_19-32.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1252023_19-40.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1252023_19-44.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1252023_19-46.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1252023_19-48.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1252023_19-50.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_0-19.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_0-23.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_0-25.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_0-46.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_0-48.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_0-51.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_0-54.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_1-13.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_1-16.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_1-17.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_1-23.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_1-26.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_1-28.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_1-32.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_1-35.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_1-45.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_1-47.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_1-49.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_13-25.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_15-10.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_15-14.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_2-10.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputDBasedany1352023_2-6.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputLenguajeUsuario1152023_0-0.txt" />
+    <Content Include="Recursos\ArchivosDeSalida\OutputLenguajeUsuario1152023_23-54.txt" />
+    <Content Include="Recursos\eye_hide_regular_icon_203604.png" />
+    <Content Include="Recursos\eye_show_regular_icon_203603.png" />
+    <Content Include="Recursos\file_export_icon_138621.png" />
+    <Content Include="Recursos\PRBasic.txt" />
+    <Content Include="Recursos\PRC.txt" />
+    <Content Include="Recursos\PRClipper.txt" />
+    <Content Include="Recursos\PRCobol.txt" />
+    <Content Include="Recursos\PRDBase.txt" />
+    <Content Include="Recursos\PRFortran.txt" />
+    <Content Include="Recursos\PRJava.txt" />
+    <Content Include="Recursos\PRPascal.txt" />
+    <Content Include="Recursos\PRPython.txt" />
+    <Content Include="Recursos\PRVisualFoxPro.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />

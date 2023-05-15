@@ -1,0 +1,31 @@
+Dim, Ident., 1
+hola, Ident., 2
+String,  PR. , 36
+While,  PR. , 37
+varias, Ident., 3
+lineas, Ident., 4
+1,  Cte. Entera , 1
+1237,  Cte. Entera , 2
+12.23,  Cte. Real , 1
+a, Ident., 5
+$,  C. Especial , 
+'String', Cte. String, 1
+<>,  C. Especial , 
+//comentarios//,  Comentario , 
++,  C. Especial , 
+-,  C. Especial , 
+=,  C. Especial , 
+Dim, Ident., 1
+hola, Ident., 2
+String,  PR. , 36
+While,  PR. , 37
+varias, Ident., 3
+lineas, Ident., 4
+1,  Cte. Entera , 1
+123,  Cte. Entera , 3
+12.23,  Cte. Real , 1
+a, Ident., 5
+Se, Ident., 6
+agregaron, Ident., 7
+estas, Ident., 8
+lineas, Ident., 4
