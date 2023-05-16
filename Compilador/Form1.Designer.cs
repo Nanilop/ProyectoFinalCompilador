@@ -1,6 +1,6 @@
 ﻿namespace Compilador
 {
-    partial class Form1
+    partial class Compilador
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -57,6 +57,10 @@
             this.btnExportar = new System.Windows.Forms.PictureBox();
             this.CompiladorBoton = new System.Windows.Forms.GroupBox();
             this.UsersBox = new System.Windows.Forms.GroupBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.chkFin = new System.Windows.Forms.CheckBox();
             this.chkInicio = new System.Windows.Forms.CheckBox();
             this.chkLen = new System.Windows.Forms.CheckBox();
@@ -83,10 +87,15 @@
             this.consultaReporteLogsBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.consultaReporteLogsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cbLenguaje = new System.Windows.Forms.ComboBox();
+            this.lenguajeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.EleccionLenguaje = new System.Windows.Forms.GroupBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.lenguajeTableAdapter = new Compilador.CompiladoresDataSet1TableAdapters.LenguajeTableAdapter();
             this.Registrobox = new System.Windows.Forms.GroupBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
@@ -113,15 +122,6 @@
             this.tableAdapterManager = new Compilador.CompiladoresDataSetTableAdapters.TableAdapterManager();
             this.usuarioTableAdapter = new Compilador.CompiladoresDataSet1TableAdapters.UsuarioTableAdapter();
             this.logReporteTableAdapter1 = new Compilador.CompiladoresDataSet1TableAdapters.LogReporteTableAdapter();
-            this.lenguajeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DGVSalida)).BeginInit();
             this.LoginBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VerContraseña)).BeginInit();
@@ -139,6 +139,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lenguajeBindingSource1)).BeginInit();
             this.EleccionLenguaje.SuspendLayout();
             this.Registrobox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnVerConfirmar)).BeginInit();
@@ -148,7 +149,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.compiladoresDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lenguajeBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -459,6 +459,48 @@
             this.UsersBox.Text = "Reporte de Actividad de los Usuarios";
             this.UsersBox.Visible = false;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Bell MT", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label20.Location = new System.Drawing.Point(697, 20);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(83, 19);
+            this.label20.TabIndex = 36;
+            this.label20.Text = "Fecha Final";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Bell MT", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label19.Location = new System.Drawing.Point(496, 20);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(91, 19);
+            this.label19.TabIndex = 35;
+            this.label19.Text = "Fecha Inicial";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Bell MT", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label18.Location = new System.Drawing.Point(262, 20);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(67, 19);
+            this.label18.TabIndex = 34;
+            this.label18.Text = "Lenguaje";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Bell MT", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label17.Location = new System.Drawing.Point(40, 20);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(60, 19);
+            this.label17.TabIndex = 33;
+            this.label17.Text = "Usuario";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
+            // 
             // chkFin
             // 
             this.chkFin.AutoSize = true;
@@ -676,6 +718,11 @@
             this.cbLenguaje.TabIndex = 21;
             this.cbLenguaje.ValueMember = "ID";
             // 
+            // lenguajeBindingSource1
+            // 
+            this.lenguajeBindingSource1.DataMember = "Lenguaje";
+            this.lenguajeBindingSource1.DataSource = this.compiladoresDataSet1;
+            // 
             // EleccionLenguaje
             // 
             this.EleccionLenguaje.Controls.Add(this.btnAceptar);
@@ -736,6 +783,49 @@
             this.Registrobox.TabStop = false;
             this.Registrobox.Text = "Registro de Nuevo Usuario";
             this.Registrobox.Visible = false;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label24.Location = new System.Drawing.Point(413, 26);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(0, 14);
+            this.label24.TabIndex = 36;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label23.Location = new System.Drawing.Point(413, 77);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(61, 14);
+            this.label23.TabIndex = 35;
+            this.label23.Text = "*10 digitos";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label22.Location = new System.Drawing.Point(101, 129);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(138, 14);
+            this.label22.TabIndex = 34;
+            this.label22.Text = "*Min.10 Máx.20 Carácteres";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label21.Location = new System.Drawing.Point(107, 78);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(132, 14);
+            this.label21.TabIndex = 33;
+            this.label21.Text = "*Min.5 Máx.20 Carácteres";
             // 
             // txtCorreo
             // 
@@ -942,97 +1032,7 @@
             // 
             this.logReporteTableAdapter1.ClearBeforeFill = true;
             // 
-            // lenguajeBindingSource1
-            // 
-            this.lenguajeBindingSource1.DataMember = "Lenguaje";
-            this.lenguajeBindingSource1.DataSource = this.compiladoresDataSet1;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Bell MT", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label17.Location = new System.Drawing.Point(40, 20);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(60, 19);
-            this.label17.TabIndex = 33;
-            this.label17.Text = "Usuario";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Bell MT", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label18.Location = new System.Drawing.Point(262, 20);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(67, 19);
-            this.label18.TabIndex = 34;
-            this.label18.Text = "Lenguaje";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Bell MT", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label19.Location = new System.Drawing.Point(496, 20);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(91, 19);
-            this.label19.TabIndex = 35;
-            this.label19.Text = "Fecha Inicial";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Bell MT", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label20.Location = new System.Drawing.Point(697, 20);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(83, 19);
-            this.label20.TabIndex = 36;
-            this.label20.Text = "Fecha Final";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label21.Location = new System.Drawing.Point(107, 78);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(132, 14);
-            this.label21.TabIndex = 33;
-            this.label21.Text = "*Min.5 Máx.20 Carácteres";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label22.Location = new System.Drawing.Point(101, 129);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(138, 14);
-            this.label22.TabIndex = 34;
-            this.label22.Text = "*Min.10 Máx.20 Carácteres";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label23.Location = new System.Drawing.Point(413, 77);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(61, 14);
-            this.label23.TabIndex = 35;
-            this.label23.Text = "*10 digitos";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label24.Location = new System.Drawing.Point(413, 26);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(0, 14);
-            this.label24.TabIndex = 36;
-            // 
-            // Form1
+            // Compilador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1044,7 +1044,7 @@
             this.Controls.Add(this.EleccionLenguaje);
             this.Controls.Add(this.CompiladorBoton);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Compilador";
             this.Text = "Compilador";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGVSalida)).EndInit();
@@ -1067,6 +1067,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lenguajeBindingSource1)).EndInit();
             this.EleccionLenguaje.ResumeLayout(false);
             this.Registrobox.ResumeLayout(false);
             this.Registrobox.PerformLayout();
@@ -1077,7 +1078,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.compiladoresDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lenguajeBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

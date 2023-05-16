@@ -26,7 +26,7 @@ using Path = System.IO.Path;
 
 namespace Compilador
 {
-    public partial class Form1 : Form
+    public partial class Compilador : Form
     {
         private String token;
         private int estado = 0;
@@ -46,7 +46,7 @@ namespace Compilador
         private string preser;
         private string matz;
         private int? u;
-        public Form1()
+        public Compilador()
         {
             // Esta llamada es exigida por el diseñador.
             InitializeComponent();
