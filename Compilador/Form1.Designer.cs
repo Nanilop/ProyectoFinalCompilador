@@ -63,16 +63,16 @@
             this.label17 = new System.Windows.Forms.Label();
             this.chkFin = new System.Windows.Forms.CheckBox();
             this.chkInicio = new System.Windows.Forms.CheckBox();
-            this.chkLen = new System.Windows.Forms.CheckBox();
+            this.chkLenguaje = new System.Windows.Forms.CheckBox();
             this.chkUser = new System.Windows.Forms.CheckBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
-            this.cbLengfilt = new System.Windows.Forms.ComboBox();
+            this.cbLengfiltro = new System.Windows.Forms.ComboBox();
             this.lenguajeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.compiladoresDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.compiladoresDataSet1 = new Compilador.CompiladoresDataSet1();
-            this.dtIniciofilt = new System.Windows.Forms.DateTimePicker();
-            this.dtFinfilt = new System.Windows.Forms.DateTimePicker();
-            this.cbUsuariofilt = new System.Windows.Forms.ComboBox();
+            this.compiladoresDataSet1 = new CompiladoresDataSet1();
+            this.dtIniciofiltro = new System.Windows.Forms.DateTimePicker();
+            this.dtFinfiltro = new System.Windows.Forms.DateTimePicker();
+            this.cbUsuariofiltro = new System.Windows.Forms.ComboBox();
             this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DGVReporte = new System.Windows.Forms.DataGridView();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -90,7 +90,7 @@
             this.lenguajeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.EleccionLenguaje = new System.Windows.Forms.GroupBox();
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.lenguajeTableAdapter = new Compilador.CompiladoresDataSet1TableAdapters.LenguajeTableAdapter();
+            this.lenguajeTableAdapter = new CompiladoresDataSet1TableAdapters.LenguajeTableAdapter();
             this.Registrobox = new System.Windows.Forms.GroupBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -103,25 +103,25 @@
             this.txtNombreNuevo = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.btnVerConfirmar = new System.Windows.Forms.PictureBox();
-            this.txtConfirContra = new System.Windows.Forms.TextBox();
+            this.txtConfirmarContraseña = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.btnRegistraNuevo = new System.Windows.Forms.Button();
             this.btnCancelaNuevo = new System.Windows.Forms.Button();
-            this.btnVerContraNueva = new System.Windows.Forms.PictureBox();
+            this.btnVerContraseñaNueva = new System.Windows.Forms.PictureBox();
             this.txtNuevoContraseña = new System.Windows.Forms.TextBox();
             this.txtNuevoUser = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.consultaReporteLogsTableAdapter = new Compilador.CompiladoresDataSet1TableAdapters.ConsultaReporteLogsTableAdapter();
+            this.consultaReporteLogsTableAdapter = new CompiladoresDataSet1TableAdapters.ConsultaReporteLogsTableAdapter();
             this.consultaReporteLogsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.consultaReporteLogsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.consultaReporteLogsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.consultaReporteLogsBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.compiladoresDataSet = new Compilador.CompiladoresDataSet();
-            this.consultaReporteLogsTableAdapter1 = new Compilador.CompiladoresDataSetTableAdapters.ConsultaReporteLogsTableAdapter();
-            this.tableAdapterManager = new Compilador.CompiladoresDataSetTableAdapters.TableAdapterManager();
-            this.usuarioTableAdapter = new Compilador.CompiladoresDataSet1TableAdapters.UsuarioTableAdapter();
-            this.logReporteTableAdapter1 = new Compilador.CompiladoresDataSet1TableAdapters.LogReporteTableAdapter();
+            this.compiladoresDataSet = new CompiladoresDataSet();
+            this.consultaReporteLogsTableAdapter1 = new CompiladoresDataSetTableAdapters.ConsultaReporteLogsTableAdapter();
+            this.tableAdapterManager = new CompiladoresDataSetTableAdapters.TableAdapterManager();
+            this.usuarioTableAdapter = new CompiladoresDataSet1TableAdapters.UsuarioTableAdapter();
+            this.logReporteTableAdapter1 = new CompiladoresDataSet1TableAdapters.LogReporteTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.DGVSalida)).BeginInit();
             this.LoginBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VerContraseña)).BeginInit();
@@ -143,7 +143,7 @@
             this.EleccionLenguaje.SuspendLayout();
             this.Registrobox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnVerConfirmar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnVerContraNueva)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVerContraseñaNueva)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource3)).BeginInit();
@@ -320,7 +320,7 @@
             this.LoginBox.Controls.Add(this.label9);
             this.LoginBox.Controls.Add(this.label10);
             this.LoginBox.Font = new System.Drawing.Font("Bell MT", 14F, System.Drawing.FontStyle.Bold);
-            this.LoginBox.Location = new System.Drawing.Point(424, 154);
+            this.LoginBox.Location = new System.Drawing.Point(425, 154);
             this.LoginBox.Name = "LoginBox";
             this.LoginBox.Size = new System.Drawing.Size(242, 168);
             this.LoginBox.TabIndex = 17;
@@ -425,7 +425,7 @@
             this.CompiladorBoton.Controls.Add(this.label5);
             this.CompiladorBoton.Controls.Add(this.label6);
             this.CompiladorBoton.Enabled = false;
-            this.CompiladorBoton.Location = new System.Drawing.Point(81, 123);
+            this.CompiladorBoton.Location = new System.Drawing.Point(82, 123);
             this.CompiladorBoton.Name = "CompiladorBoton";
             this.CompiladorBoton.Size = new System.Drawing.Size(929, 231);
             this.CompiladorBoton.TabIndex = 19;
@@ -440,18 +440,18 @@
             this.UsersBox.Controls.Add(this.label17);
             this.UsersBox.Controls.Add(this.chkFin);
             this.UsersBox.Controls.Add(this.chkInicio);
-            this.UsersBox.Controls.Add(this.chkLen);
+            this.UsersBox.Controls.Add(this.chkLenguaje);
             this.UsersBox.Controls.Add(this.chkUser);
             this.UsersBox.Controls.Add(this.btnFiltrar);
-            this.UsersBox.Controls.Add(this.cbLengfilt);
-            this.UsersBox.Controls.Add(this.dtIniciofilt);
-            this.UsersBox.Controls.Add(this.dtFinfilt);
-            this.UsersBox.Controls.Add(this.cbUsuariofilt);
+            this.UsersBox.Controls.Add(this.cbLengfiltro);
+            this.UsersBox.Controls.Add(this.dtIniciofiltro);
+            this.UsersBox.Controls.Add(this.dtFinfiltro);
+            this.UsersBox.Controls.Add(this.cbUsuariofiltro);
             this.UsersBox.Controls.Add(this.DGVReporte);
             this.UsersBox.Controls.Add(this.btnExportar);
             this.UsersBox.Enabled = false;
             this.UsersBox.Font = new System.Drawing.Font("Bell MT", 14F, System.Drawing.FontStyle.Bold);
-            this.UsersBox.Location = new System.Drawing.Point(11, 74);
+            this.UsersBox.Location = new System.Drawing.Point(12, 74);
             this.UsersBox.Name = "UsersBox";
             this.UsersBox.Size = new System.Drawing.Size(1069, 329);
             this.UsersBox.TabIndex = 20;
@@ -521,15 +521,15 @@
             this.chkInicio.UseVisualStyleBackColor = true;
             this.chkInicio.CheckedChanged += new System.EventHandler(this.chkInicio_CheckedChanged);
             // 
-            // chkLen
+            // chkLenguaje
             // 
-            this.chkLen.AutoSize = true;
-            this.chkLen.Location = new System.Drawing.Point(245, 50);
-            this.chkLen.Name = "chkLen";
-            this.chkLen.Size = new System.Drawing.Size(15, 14);
-            this.chkLen.TabIndex = 25;
-            this.chkLen.UseVisualStyleBackColor = true;
-            this.chkLen.CheckedChanged += new System.EventHandler(this.chkLen_CheckedChanged);
+            this.chkLenguaje.AutoSize = true;
+            this.chkLenguaje.Location = new System.Drawing.Point(245, 50);
+            this.chkLenguaje.Name = "chkLenguaje";
+            this.chkLenguaje.Size = new System.Drawing.Size(15, 14);
+            this.chkLenguaje.TabIndex = 25;
+            this.chkLenguaje.UseVisualStyleBackColor = true;
+            this.chkLenguaje.CheckedChanged += new System.EventHandler(this.chkLen_CheckedChanged);
             // 
             // chkUser
             // 
@@ -552,17 +552,17 @@
             this.btnFiltrar.UseVisualStyleBackColor = true;
             this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
-            // cbLengfilt
+            // cbLengfiltro
             // 
-            this.cbLengfilt.DataSource = this.lenguajeBindingSource;
-            this.cbLengfilt.DisplayMember = "Nombre";
-            this.cbLengfilt.Enabled = false;
-            this.cbLengfilt.FormattingEnabled = true;
-            this.cbLengfilt.Location = new System.Drawing.Point(266, 41);
-            this.cbLengfilt.Name = "cbLengfilt";
-            this.cbLengfilt.Size = new System.Drawing.Size(199, 32);
-            this.cbLengfilt.TabIndex = 23;
-            this.cbLengfilt.ValueMember = "ID";
+            this.cbLengfiltro.DataSource = this.lenguajeBindingSource;
+            this.cbLengfiltro.DisplayMember = "Nombre";
+            this.cbLengfiltro.Enabled = false;
+            this.cbLengfiltro.FormattingEnabled = true;
+            this.cbLengfiltro.Location = new System.Drawing.Point(266, 41);
+            this.cbLengfiltro.Name = "cbLengfiltro";
+            this.cbLengfiltro.Size = new System.Drawing.Size(199, 32);
+            this.cbLengfiltro.TabIndex = 23;
+            this.cbLengfiltro.ValueMember = "ID";
             // 
             // lenguajeBindingSource
             // 
@@ -580,39 +580,39 @@
             this.compiladoresDataSet1.EnforceConstraints = false;
             this.compiladoresDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dtIniciofilt
+            // dtIniciofiltro
             // 
-            this.dtIniciofilt.CustomFormat = "dd-MM-yyyy HH:mm";
-            this.dtIniciofilt.Enabled = false;
-            this.dtIniciofilt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtIniciofilt.Location = new System.Drawing.Point(500, 40);
-            this.dtIniciofilt.Name = "dtIniciofilt";
-            this.dtIniciofilt.Size = new System.Drawing.Size(174, 29);
-            this.dtIniciofilt.TabIndex = 22;
-            this.dtIniciofilt.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            this.dtIniciofiltro.CustomFormat = "dd-MM-yyyy HH:mm";
+            this.dtIniciofiltro.Enabled = false;
+            this.dtIniciofiltro.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtIniciofiltro.Location = new System.Drawing.Point(500, 40);
+            this.dtIniciofiltro.Name = "dtIniciofiltro";
+            this.dtIniciofiltro.Size = new System.Drawing.Size(174, 29);
+            this.dtIniciofiltro.TabIndex = 22;
+            this.dtIniciofiltro.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
-            // dtFinfilt
+            // dtFinfiltro
             // 
-            this.dtFinfilt.CalendarForeColor = System.Drawing.Color.PaleTurquoise;
-            this.dtFinfilt.CustomFormat = "dd-MM-yyyy HH:mm";
-            this.dtFinfilt.Enabled = false;
-            this.dtFinfilt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtFinfilt.Location = new System.Drawing.Point(701, 40);
-            this.dtFinfilt.Name = "dtFinfilt";
-            this.dtFinfilt.Size = new System.Drawing.Size(185, 29);
-            this.dtFinfilt.TabIndex = 21;
+            this.dtFinfiltro.CalendarForeColor = System.Drawing.Color.PaleTurquoise;
+            this.dtFinfiltro.CustomFormat = "dd-MM-yyyy HH:mm";
+            this.dtFinfiltro.Enabled = false;
+            this.dtFinfiltro.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtFinfiltro.Location = new System.Drawing.Point(701, 40);
+            this.dtFinfiltro.Name = "dtFinfiltro";
+            this.dtFinfiltro.Size = new System.Drawing.Size(185, 29);
+            this.dtFinfiltro.TabIndex = 21;
             // 
-            // cbUsuariofilt
+            // cbUsuariofiltro
             // 
-            this.cbUsuariofilt.DataSource = this.usuarioBindingSource;
-            this.cbUsuariofilt.DisplayMember = "UserName";
-            this.cbUsuariofilt.Enabled = false;
-            this.cbUsuariofilt.FormattingEnabled = true;
-            this.cbUsuariofilt.Location = new System.Drawing.Point(44, 41);
-            this.cbUsuariofilt.Name = "cbUsuariofilt";
-            this.cbUsuariofilt.Size = new System.Drawing.Size(189, 32);
-            this.cbUsuariofilt.TabIndex = 20;
-            this.cbUsuariofilt.ValueMember = "ID";
+            this.cbUsuariofiltro.DataSource = this.usuarioBindingSource;
+            this.cbUsuariofiltro.DisplayMember = "UserName";
+            this.cbUsuariofiltro.Enabled = false;
+            this.cbUsuariofiltro.FormattingEnabled = true;
+            this.cbUsuariofiltro.Location = new System.Drawing.Point(44, 41);
+            this.cbUsuariofiltro.Name = "cbUsuariofiltro";
+            this.cbUsuariofiltro.Size = new System.Drawing.Size(189, 32);
+            this.cbUsuariofiltro.TabIndex = 20;
+            this.cbUsuariofiltro.ValueMember = "ID";
             // 
             // usuarioBindingSource
             // 
@@ -729,7 +729,7 @@
             this.EleccionLenguaje.Controls.Add(this.cbLenguaje);
             this.EleccionLenguaje.Enabled = false;
             this.EleccionLenguaje.Font = new System.Drawing.Font("Bell MT", 14F, System.Drawing.FontStyle.Bold);
-            this.EleccionLenguaje.Location = new System.Drawing.Point(417, 189);
+            this.EleccionLenguaje.Location = new System.Drawing.Point(418, 189);
             this.EleccionLenguaje.Name = "EleccionLenguaje";
             this.EleccionLenguaje.Size = new System.Drawing.Size(257, 99);
             this.EleccionLenguaje.TabIndex = 22;
@@ -765,18 +765,18 @@
             this.Registrobox.Controls.Add(this.txtNombreNuevo);
             this.Registrobox.Controls.Add(this.label14);
             this.Registrobox.Controls.Add(this.btnVerConfirmar);
-            this.Registrobox.Controls.Add(this.txtConfirContra);
+            this.Registrobox.Controls.Add(this.txtConfirmarContraseña);
             this.Registrobox.Controls.Add(this.label13);
             this.Registrobox.Controls.Add(this.btnRegistraNuevo);
             this.Registrobox.Controls.Add(this.btnCancelaNuevo);
-            this.Registrobox.Controls.Add(this.btnVerContraNueva);
+            this.Registrobox.Controls.Add(this.btnVerContraseñaNueva);
             this.Registrobox.Controls.Add(this.txtNuevoContraseña);
             this.Registrobox.Controls.Add(this.txtNuevoUser);
             this.Registrobox.Controls.Add(this.label11);
             this.Registrobox.Controls.Add(this.label12);
             this.Registrobox.Enabled = false;
             this.Registrobox.Font = new System.Drawing.Font("Bell MT", 14F, System.Drawing.FontStyle.Bold);
-            this.Registrobox.Location = new System.Drawing.Point(300, 103);
+            this.Registrobox.Location = new System.Drawing.Point(301, 103);
             this.Registrobox.Name = "Registrobox";
             this.Registrobox.Size = new System.Drawing.Size(491, 270);
             this.Registrobox.TabIndex = 24;
@@ -892,14 +892,14 @@
             this.btnVerConfirmar.TabStop = false;
             this.btnVerConfirmar.Click += new System.EventHandler(this.btnVerConfirmar_Click);
             // 
-            // txtConfirContra
+            // txtConfirmarContraseña
             // 
-            this.txtConfirContra.Location = new System.Drawing.Point(251, 147);
-            this.txtConfirContra.Name = "txtConfirContra";
-            this.txtConfirContra.PasswordChar = '*';
-            this.txtConfirContra.Size = new System.Drawing.Size(223, 29);
-            this.txtConfirContra.TabIndex = 25;
-            this.txtConfirContra.TextChanged += new System.EventHandler(this.txtConfirContra_TextChanged);
+            this.txtConfirmarContraseña.Location = new System.Drawing.Point(251, 147);
+            this.txtConfirmarContraseña.Name = "txtConfirmarContraseña";
+            this.txtConfirmarContraseña.PasswordChar = '*';
+            this.txtConfirmarContraseña.Size = new System.Drawing.Size(223, 29);
+            this.txtConfirmarContraseña.TabIndex = 25;
+            this.txtConfirmarContraseña.TextChanged += new System.EventHandler(this.txtConfirContra_TextChanged);
             // 
             // label13
             // 
@@ -934,16 +934,16 @@
             this.btnCancelaNuevo.UseVisualStyleBackColor = true;
             this.btnCancelaNuevo.Click += new System.EventHandler(this.btnCancelaNuevo_Click);
             // 
-            // btnVerContraNueva
+            // btnVerContraseñaNueva
             // 
-            this.btnVerContraNueva.BackColor = System.Drawing.SystemColors.Window;
-            this.btnVerContraNueva.Location = new System.Drawing.Point(207, 153);
-            this.btnVerContraNueva.Name = "btnVerContraNueva";
-            this.btnVerContraNueva.Size = new System.Drawing.Size(26, 18);
-            this.btnVerContraNueva.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnVerContraNueva.TabIndex = 22;
-            this.btnVerContraNueva.TabStop = false;
-            this.btnVerContraNueva.Click += new System.EventHandler(this.btnVerContraNueva_Click);
+            this.btnVerContraseñaNueva.BackColor = System.Drawing.SystemColors.Window;
+            this.btnVerContraseñaNueva.Location = new System.Drawing.Point(207, 153);
+            this.btnVerContraseñaNueva.Name = "btnVerContraseñaNueva";
+            this.btnVerContraseñaNueva.Size = new System.Drawing.Size(26, 18);
+            this.btnVerContraseñaNueva.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnVerContraseñaNueva.TabIndex = 22;
+            this.btnVerContraseñaNueva.TabStop = false;
+            this.btnVerContraseñaNueva.Click += new System.EventHandler(this.btnVerContraNueva_Click);
             // 
             // txtNuevoContraseña
             // 
@@ -1021,7 +1021,7 @@
             this.tableAdapterManager.Connection = null;
             this.tableAdapterManager.LenguajeTableAdapter = null;
             this.tableAdapterManager.LogReporteTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Compilador.CompiladoresDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = CompiladoresDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsuarioTableAdapter = null;
             // 
             // usuarioTableAdapter
@@ -1038,9 +1038,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(1093, 408);
-            this.Controls.Add(this.Registrobox);
             this.Controls.Add(this.LoginBox);
             this.Controls.Add(this.UsersBox);
+            this.Controls.Add(this.Registrobox);
             this.Controls.Add(this.EleccionLenguaje);
             this.Controls.Add(this.CompiladorBoton);
             this.Controls.Add(this.label1);
@@ -1072,7 +1072,7 @@
             this.Registrobox.ResumeLayout(false);
             this.Registrobox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnVerConfirmar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnVerContraNueva)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVerContraseñaNueva)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource3)).EndInit();
@@ -1128,11 +1128,11 @@
         private System.Windows.Forms.TextBox txtNombreNuevo;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox btnVerConfirmar;
-        private System.Windows.Forms.TextBox txtConfirContra;
+        private System.Windows.Forms.TextBox txtConfirmarContraseña;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnRegistraNuevo;
         private System.Windows.Forms.Button btnCancelaNuevo;
-        private System.Windows.Forms.PictureBox btnVerContraNueva;
+        private System.Windows.Forms.PictureBox btnVerContraseñaNueva;
         private System.Windows.Forms.TextBox txtNuevoContraseña;
         private System.Windows.Forms.TextBox txtNuevoUser;
         private System.Windows.Forms.Label label11;
@@ -1153,12 +1153,12 @@
         private System.Windows.Forms.BindingSource consultaReporteLogsBindingSource5;
         private System.Windows.Forms.BindingSource consultaReporteLogsBindingSource6;
         private System.Windows.Forms.BindingSource consultaReporteLogsBindingSource7;
-        private System.Windows.Forms.ComboBox cbUsuariofilt;
+        private System.Windows.Forms.ComboBox cbUsuariofiltro;
         private System.Windows.Forms.BindingSource usuarioBindingSource;
         private CompiladoresDataSet1TableAdapters.UsuarioTableAdapter usuarioTableAdapter;
-        private System.Windows.Forms.ComboBox cbLengfilt;
-        private System.Windows.Forms.DateTimePicker dtIniciofilt;
-        private System.Windows.Forms.DateTimePicker dtFinfilt;
+        private System.Windows.Forms.ComboBox cbLengfiltro;
+        private System.Windows.Forms.DateTimePicker dtIniciofiltro;
+        private System.Windows.Forms.DateTimePicker dtFinfiltro;
         private CompiladoresDataSet1TableAdapters.LogReporteTableAdapter logReporteTableAdapter1;
         private System.Windows.Forms.BindingSource consultaReporteLogsBindingSource8;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
@@ -1168,7 +1168,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.CheckBox chkFin;
         private System.Windows.Forms.CheckBox chkInicio;
-        private System.Windows.Forms.CheckBox chkLen;
+        private System.Windows.Forms.CheckBox chkLenguaje;
         private System.Windows.Forms.CheckBox chkUser;
         private System.Windows.Forms.Button btnFiltrar;
         private System.Windows.Forms.BindingSource lenguajeBindingSource1;

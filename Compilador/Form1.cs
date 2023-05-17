@@ -57,7 +57,7 @@ namespace Compilador
             //LeeMatrizEstados("C:\\Users\\LOPEZ\\Desktop\\López Rodríguez Daniela\\8vo semestre\\BlocMatrizCobolt.csv");
             btnExportar.Image = Image.FromFile("..\\..\\Recursos\\file_export_icon_138621.png");
             VerContraseña.Image = Image.FromFile("..\\..\\Recursos\\eye_show_regular_icon_203603.png");
-            btnVerContraNueva.Image = Image.FromFile("..\\..\\Recursos\\eye_show_regular_icon_203603.png");
+            btnVerContraseñaNueva.Image = Image.FromFile("..\\..\\Recursos\\eye_show_regular_icon_203603.png");
             btnVerConfirmar.Image = Image.FromFile("..\\..\\Recursos\\eye_show_regular_icon_203603.png");
             DGVSalida.Columns.Add("Token", "Token");
             DGVSalida.Columns.Add("Tipo", "Tipo");
@@ -661,7 +661,7 @@ namespace Compilador
         }
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
-            txtConfirContra.Clear();
+            txtConfirmarContraseña.Clear();
             txtNombreNuevo.Clear();
             txtTelefono.Clear();
             txtNuevoContraseña.Clear();
@@ -678,13 +678,13 @@ namespace Compilador
             {
                 verContrCon = false;
                 btnVerConfirmar.Image = Image.FromFile("..\\..\\Recursos\\eye_show_regular_icon_203603.png");
-                txtConfirContra.PasswordChar = '*';
+                txtConfirmarContraseña.PasswordChar = '*';
             }
             else
             {
                 verContrCon = true;
                 btnVerConfirmar.Image = Image.FromFile("..\\..\\Recursos\\eye_hide_regular_icon_203604.png");
-                txtConfirContra.PasswordChar = (char)0;
+                txtConfirmarContraseña.PasswordChar = (char)0;
             }
         }
         private void btnVerContraNueva_Click(object sender, EventArgs e)
@@ -692,13 +692,13 @@ namespace Compilador
             if (verContrN)
             {
                 verContrN = false;
-                btnVerContraNueva.Image = Image.FromFile("..\\..\\Recursos\\eye_show_regular_icon_203603.png");
+                btnVerContraseñaNueva.Image = Image.FromFile("..\\..\\Recursos\\eye_show_regular_icon_203603.png");
                 txtNuevoContraseña.PasswordChar = '*';
             }
             else
             {
                 verContrN = true;
-                btnVerContraNueva.Image = Image.FromFile("..\\..\\Recursos\\eye_hide_regular_icon_203604.png");
+                btnVerContraseñaNueva.Image = Image.FromFile("..\\..\\Recursos\\eye_hide_regular_icon_203604.png");
                 txtNuevoContraseña.PasswordChar = (char)0;
             }
         }
@@ -782,22 +782,22 @@ namespace Compilador
         {
             if (chkUser.Checked)
             {
-                cbUsuariofilt.Enabled = true;
+                cbUsuariofiltro.Enabled = true;
             }
             else {
-                cbUsuariofilt.Enabled = false;
+                cbUsuariofiltro.Enabled = false;
             }
         }
         private void chkLen_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkLen.Checked)
+            if (chkLenguaje.Checked)
             {
-                cbLengfilt.Enabled = true;
+                cbLengfiltro.Enabled = true;
                 
             }
             else
             {
-                cbLengfilt.Enabled = false;
+                cbLengfiltro.Enabled = false;
             }
 
         }
@@ -805,24 +805,24 @@ namespace Compilador
         {
             if (chkInicio.Checked)
             {
-                dtIniciofilt.Enabled = true;
+                dtIniciofiltro.Enabled = true;
                 
             }
             else
             {
-                dtIniciofilt.Enabled = false;
+                dtIniciofiltro.Enabled = false;
             }
         }
         private void chkFin_CheckedChanged(object sender, EventArgs e)
         {
             if (chkFin.Checked)
             {
-                dtFinfilt.Enabled = true;
+                dtFinfiltro.Enabled = true;
                 
             }
             else
             {
-                dtFinfilt.Enabled = false;
+                dtFinfiltro.Enabled = false;
             }
         }
         private void btnFiltrar_Click(object sender, EventArgs e)
@@ -833,19 +833,19 @@ namespace Compilador
             DateTime? fi = null;
             if (chkUser.Checked)
             {
-                usu = (int?)cbUsuariofilt.SelectedValue;
+                usu = (int?)cbUsuariofiltro.SelectedValue;
             }
-            if (chkLen.Checked)
+            if (chkLenguaje.Checked)
             {
-                l =(int?) cbLengfilt.SelectedValue;
+                l =(int?) cbLengfiltro.SelectedValue;
             }
             if (chkInicio.Checked)
             {
-                i = (DateTime?)dtIniciofilt.Value;
+                i = (DateTime?)dtIniciofiltro.Value;
             }
             if (chkFin.Checked)
             {
-                fi = (DateTime?)dtFinfilt.Value;
+                fi = (DateTime?)dtFinfiltro.Value;
             }
             consultaReporteLogsTableAdapter.Fill(compiladoresDataSet1.ConsultaReporteLogs, usu, l, i, fi);
         }
@@ -860,7 +860,7 @@ namespace Compilador
             if (txtTelefono.Text.Length == 10) {
                 if (txtNuevoUser.Text.Length >= 5 && txtNuevoUser.Text.Length <= 20) {
                     if (txtNuevoContraseña.Text.Length>= 10 && txtNuevoContraseña.Text.Length <= 20) {
-                        if (txtNuevoContraseña.Text == txtConfirContra.Text) {
+                        if (txtNuevoContraseña.Text == txtConfirmarContraseña.Text) {
                             if (IsValidEmail(txtCorreo.Text)) {
                                 btnRegistraNuevo.Enabled = true; 
                             }
