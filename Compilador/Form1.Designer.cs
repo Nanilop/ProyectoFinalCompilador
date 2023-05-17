@@ -69,7 +69,7 @@
             this.cbLengfilt = new System.Windows.Forms.ComboBox();
             this.lenguajeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.compiladoresDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ConexionCorrecta = new Compilador.CompiladoresDataSet1();
+            this.compiladoresDataSet1 = new Compilador.CompiladoresDataSet1();
             this.dtIniciofilt = new System.Windows.Forms.DateTimePicker();
             this.dtFinfilt = new System.Windows.Forms.DateTimePicker();
             this.cbUsuariofilt = new System.Windows.Forms.ComboBox();
@@ -130,7 +130,7 @@
             this.UsersBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lenguajeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.compiladoresDataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConexionCorrecta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.compiladoresDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVReporte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource8)).BeginInit();
@@ -571,14 +571,14 @@
             // 
             // compiladoresDataSet1BindingSource
             // 
-            this.compiladoresDataSet1BindingSource.DataSource = this.ConexionCorrecta;
+            this.compiladoresDataSet1BindingSource.DataSource = this.compiladoresDataSet1;
             this.compiladoresDataSet1BindingSource.Position = 0;
             // 
-            // ConexionCorrecta
+            // compiladoresDataSet1
             // 
-            this.ConexionCorrecta.DataSetName = "CompiladoresDataSet1";
-            this.ConexionCorrecta.EnforceConstraints = false;
-            this.ConexionCorrecta.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.compiladoresDataSet1.DataSetName = "CompiladoresDataSet1";
+            this.compiladoresDataSet1.EnforceConstraints = false;
+            this.compiladoresDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dtIniciofilt
             // 
@@ -617,7 +617,7 @@
             // usuarioBindingSource
             // 
             this.usuarioBindingSource.DataMember = "Usuario";
-            this.usuarioBindingSource.DataSource = this.ConexionCorrecta;
+            this.usuarioBindingSource.DataSource = this.compiladoresDataSet1;
             // 
             // DGVReporte
             // 
@@ -680,7 +680,7 @@
             // consultaReporteLogsBindingSource8
             // 
             this.consultaReporteLogsBindingSource8.DataMember = "ConsultaReporteLogs";
-            this.consultaReporteLogsBindingSource8.DataSource = this.ConexionCorrecta;
+            this.consultaReporteLogsBindingSource8.DataSource = this.compiladoresDataSet1;
             // 
             // consultaReporteLogsBindingSource7
             // 
@@ -689,23 +689,23 @@
             // 
             // compiladoresDataSet1BindingSource1
             // 
-            this.compiladoresDataSet1BindingSource1.DataSource = this.ConexionCorrecta;
+            this.compiladoresDataSet1BindingSource1.DataSource = this.compiladoresDataSet1;
             this.compiladoresDataSet1BindingSource1.Position = 0;
             // 
             // consultaReporteLogsBindingSource6
             // 
             this.consultaReporteLogsBindingSource6.DataMember = "ConsultaReporteLogs";
-            this.consultaReporteLogsBindingSource6.DataSource = this.ConexionCorrecta;
+            this.consultaReporteLogsBindingSource6.DataSource = this.compiladoresDataSet1;
             // 
             // consultaReporteLogsBindingSource5
             // 
             this.consultaReporteLogsBindingSource5.DataMember = "ConsultaReporteLogs";
-            this.consultaReporteLogsBindingSource5.DataSource = this.ConexionCorrecta;
+            this.consultaReporteLogsBindingSource5.DataSource = this.compiladoresDataSet1;
             // 
             // consultaReporteLogsBindingSource
             // 
             this.consultaReporteLogsBindingSource.DataMember = "ConsultaReporteLogs";
-            this.consultaReporteLogsBindingSource.DataSource = this.ConexionCorrecta;
+            this.consultaReporteLogsBindingSource.DataSource = this.compiladoresDataSet1;
             // 
             // cbLenguaje
             // 
@@ -721,7 +721,7 @@
             // lenguajeBindingSource1
             // 
             this.lenguajeBindingSource1.DataMember = "Lenguaje";
-            this.lenguajeBindingSource1.DataSource = this.ConexionCorrecta;
+            this.lenguajeBindingSource1.DataSource = this.compiladoresDataSet1;
             // 
             // EleccionLenguaje
             // 
@@ -989,12 +989,12 @@
             // consultaReporteLogsBindingSource1
             // 
             this.consultaReporteLogsBindingSource1.DataMember = "ConsultaReporteLogs";
-            this.consultaReporteLogsBindingSource1.DataSource = this.ConexionCorrecta;
+            this.consultaReporteLogsBindingSource1.DataSource = this.compiladoresDataSet1;
             // 
             // consultaReporteLogsBindingSource2
             // 
             this.consultaReporteLogsBindingSource2.DataMember = "ConsultaReporteLogs";
-            this.consultaReporteLogsBindingSource2.DataSource = this.ConexionCorrecta;
+            this.consultaReporteLogsBindingSource2.DataSource = this.compiladoresDataSet1;
             // 
             // consultaReporteLogsBindingSource3
             // 
@@ -1058,7 +1058,7 @@
             this.UsersBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lenguajeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.compiladoresDataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConexionCorrecta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.compiladoresDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVReporte)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaReporteLogsBindingSource8)).EndInit();
@@ -1117,7 +1117,7 @@
         private System.Windows.Forms.GroupBox EleccionLenguaje;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.BindingSource compiladoresDataSet1BindingSource;
-        private CompiladoresDataSet1 ConexionCorrecta;
+        private CompiladoresDataSet1 compiladoresDataSet1;
         private System.Windows.Forms.BindingSource lenguajeBindingSource;
         private CompiladoresDataSet1TableAdapters.LenguajeTableAdapter lenguajeTableAdapter;
         private System.Windows.Forms.GroupBox Registrobox;

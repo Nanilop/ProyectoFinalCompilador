@@ -50,9 +50,9 @@ namespace Compilador
         {
             // Esta llamada es exigida por el diseñador.
             InitializeComponent();
-            this.usuarioTableAdapter.Fill(this.ConexionCorrecta.Usuario);
+            this.usuarioTableAdapter.Fill(this.compiladoresDataSet1.Usuario);
             // TODO: esta línea de código carga datos en la tabla 'compiladoresDataSet1.Lenguaje' Puede moverla o quitarla según sea necesario.
-            this.lenguajeTableAdapter.Fill(this.ConexionCorrecta.Lenguaje);
+            this.lenguajeTableAdapter.Fill(this.compiladoresDataSet1.Lenguaje);
             OpenFileDialog1 = new OpenFileDialog();
             //LeeMatrizEstados("C:\\Users\\LOPEZ\\Desktop\\López Rodríguez Daniela\\8vo semestre\\BlocMatrizCobolt.csv");
             btnExportar.Image = Image.FromFile("..\\..\\Recursos\\file_export_icon_138621.png");
@@ -520,7 +520,7 @@ namespace Compilador
                     + f.Month.ToString() + f.Year.ToString() + "_" + f.Hour.ToString() + "-" +
                     f.Minute.ToString() + ".txt"));
                 //ConsultaReporteLogsTableAdapter n = new ConsultaReporteLogsTableAdapter();
-                consultaReporteLogsTableAdapter.Fill(ConexionCorrecta.ConsultaReporteLogs, null, null, null, null);
+                consultaReporteLogsTableAdapter.Fill(compiladoresDataSet1.ConsultaReporteLogs, null, null, null, null);
                 //CompiladoresDataSet1.ConsultaReporteLogsDataTable g = n.GetData(null, null, null, null);
                 //DGVReporte.DataSource = g;
                     //g.AsDataView();
@@ -847,7 +847,7 @@ namespace Compilador
             {
                 fi = (DateTime?)dtFinfilt.Value;
             }
-            consultaReporteLogsTableAdapter.Fill(ConexionCorrecta.ConsultaReporteLogs, usu, l, i, fi);
+            consultaReporteLogsTableAdapter.Fill(compiladoresDataSet1.ConsultaReporteLogs, usu, l, i, fi);
         }
         private void label17_Click(object sender, EventArgs e)
         {
